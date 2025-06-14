@@ -4539,7 +4539,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
+		(property "Footprint" "Wire_Connectors:Rotary_Encoder_Wire_Connector"
 			(at 99.06 75.946 0)
 			(effects
 				(font
@@ -5089,7 +5089,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SSD1306_0.91_OLED:SSD1306-0.91-OLED-4pin-128x32"
+		(property "Footprint" "Wire_Connectors:SSD1306_0.91_OLED_Wire_Connector"
 			(at 54.61 76.2 0)
 			(effects
 				(font

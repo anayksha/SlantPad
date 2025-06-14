@@ -1,4 +1,4 @@
-25245443669328240
+25221838448834354
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -92359,35 +92359,28 @@ Resistor Radial_Power series Radial pin pitch 7.37mm 10W length 16.1mm width 9mm
 2
 Rotary_Encoder
 RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
-Alps rotary encoder, EC11E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
 rotary encoder
 0
 7
 6
 Rotary_Encoder
 RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles
-Alps rotary encoder, EC11E... with switch, vertical shaft, mounting holes with circular drills, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
-rotary encoder
-0
-7
-6
-Rotary_Encoder
-RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_MountingHoles
-Alps rotary encoder, EC11E... with switch, vertical shaft, https://www.lcsc.com/datasheet/lcsc_datasheet_2410010003_ALPSALPINE-EC11E09444A8_C1322538.pdf
+Alps rotary encoder, EC12E... with switch, vertical shaft, mounting holes with circular drills, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
 rotary encoder
 0
 7
 6
 Rotary_Encoder
 RotaryEncoder_Alps_EC11E_Vertical_H20mm
-Alps rotary encoder, EC11E... without switch (pins are dummy), vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+Alps rotary encoder, EC12E... without switch (pins are dummy), vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
 rotary encoder
 0
 7
 4
 Rotary_Encoder
 RotaryEncoder_Alps_EC11E_Vertical_H20mm_CircularMountingHoles
-Alps rotary encoder, EC11E... without switch (pins are dummy), vertical shaft, mounting holes with circular drills, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+Alps rotary encoder, EC12E... without switch (pins are dummy), vertical shaft, mounting holes with circular drills, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
 rotary encoder
 0
 7
@@ -92420,104 +92413,6 @@ rotary encoder
 0
 5
 4
-Rotary_Encoder
-RotaryEncoder_Bourns_Horizontal_PEC09-2xxxF-Nxxxx
-Bourns rotary encoder, PEC09, without switch, horizontal shaft, https://www.bourns.com/products/encoders/contacting-encoders/product/PEC09
-rotary encoder
-0
-3
-3
-Rotary_Encoder
-RotaryEncoder_Bourns_Horizontal_PEC09-2xxxF-Sxxxx
-Bourns rotary encoder, PEC09, with switch, horizontal shaft, https://www.bourns.com/products/encoders/contacting-encoders/product/PEC09
-rotary encoder
-0
-5
-5
-Rotary_Encoder
-RotaryEncoder_Bourns_Horizontal_PEC12R-2x17F-Nxxxx
-Bourns rotary encoder, PEC12R, without switch, horizontal shaft, 17mm shaft length, https://www.bourns.com/docs/product-datasheets/pec12r.pdf
-rotary encoder
-0
-5
-4
-Rotary_Encoder
-RotaryEncoder_Bourns_Horizontal_PEC12R-2x17F-Sxxxx
-Bourns rotary encoder, PEC12R, with switch, horizontal shaft, 17mm shaft length, https://www.bourns.com/docs/product-datasheets/pec12r.pdf
-rotary encoder
-0
-7
-6
-Rotary_Encoder
-RotaryEncoder_Bourns_Horizontal_PEL12D-2x16F-Sxxxx
-Rotary encoder with switch and illuminated 4mm shaft, dual-led, https://www.bourns.com/docs/product-datasheets/PEL12D.pdf
-rotary encoder illuminated switch horizontal
-0
-9
-8
-Rotary_Encoder
-RotaryEncoder_Bourns_Horizontal_PEL12D-2x18F-Sxxxx
-Rotary encoder with switch and illuminated 6mm shaft, dual-led, https://www.bourns.com/docs/product-datasheets/PEL12D.pdf
-rotary encoder illuminated switch horizontal
-0
-9
-8
-Rotary_Encoder
-RotaryEncoder_Bourns_Horizontal_PEL12D-2x21F-Sxxxx
-Rotary encoder with switch and illuminated 8mm shaft, dual-led, https://www.bourns.com/docs/product-datasheets/PEL12D.pdf
-rotary encoder illuminated switch horizontal
-0
-9
-8
-Rotary_Encoder
-RotaryEncoder_Bourns_Horizontal_PEL12D-2x25S-Sxxxx
-Rotary encoder with switch and illuminated shaft, dual-led, https://www.bourns.com/docs/product-datasheets/PEL12D.pdf
-rotary encoder illuminated switch horizontal
-0
-9
-8
-Rotary_Encoder
-RotaryEncoder_Bourns_Horizontal_PEL12D-2x26F-Sxxxx
-Rotary encoder with switch and illuminated 13mm shaft, dual-led, https://www.bourns.com/docs/product-datasheets/PEL12D.pdf
-rotary encoder illuminated switch horizontal
-0
-9
-8
-Rotary_Encoder
-RotaryEncoder_Bourns_Horizontal_PEL12D-2x31F-Sxxxx
-Rotary encoder with switch and illuminated 18mm shaft, dual-led, https://www.bourns.com/docs/product-datasheets/PEL12D.pdf
-rotary encoder illuminated switch horizontal
-0
-9
-8
-Rotary_Encoder
-RotaryEncoder_Bourns_Vertical_PEC12R-3x17F-Nxxxx
-Bourns rotary encoder, PEC12R, without switch, with bushing, vertical shaft, 17.5mm shaft, https://www.bourns.com/docs/product-datasheets/pec12r.pdf
-rotary encoder
-0
-5
-4
-Rotary_Encoder
-RotaryEncoder_Bourns_Vertical_PEC12R-3x17F-Sxxxx
-Bourns rotary encoder, PEC12R, with switch, with bushing, vertical shaft, 17.5mm shaft, https://www.bourns.com/docs/product-datasheets/pec12r.pdf
-rotary encoder
-0
-7
-6
-Rotary_Encoder
-RotaryEncoder_Bourns_Vertical_PEL12D-4x25S-Sxxxx
-Rotary encoder with switch and illuminated 13mm shaft, dual-led, https://www.bourns.com/docs/product-datasheets/PEL12D.pdf
-rotary encoder illuminated switch vertical
-0
-9
-8
-Rotary_Encoder
-RotaryEncoder_Bourns_Vertical_PEL12D-4xxxF-Sxxxx
-Rotary encoder with switch and illuminated 4,6,8,13,18mm shaft, dual-led, https://www.bourns.com/docs/product-datasheets/PEL12D.pdf
-rotary encoder illuminated switch vertical
-0
-9
-8
 SSD1306_0.91_OLED
 SSD1306-0.91-OLED-4pin-128x32
 
@@ -101422,3 +101317,17 @@ Varistor VF
 0
 2
 2
+Wire_Connectors
+Rotary_Encoder_Wire_Connector
+
+
+0
+3
+3
+Wire_Connectors
+SSD1306_0.91_OLED_Wire_Connector
+
+
+0
+4
+4

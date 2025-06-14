@@ -3,4 +3,5 @@
   (lib (name "OPL")(type "KiCad")(uri "${KIPRJMOD}/libraries/OPL_Kicad_Library-master/Seeed Studio XIAO Series Library")(options "")(descr ""))
   (lib (name "SSD1306_0.91_OLED")(type "KiCad")(uri "${KIPRJMOD}/libraries/SSD1306_0.91_OLED.pretty")(options "")(descr ""))
   (lib (name "Rotary_Encoder")(type "KiCad")(uri "${KIPRJMOD}/libraries/Rotary_Encoder.pretty")(options "")(descr ""))
+  (lib (name "Wire_Connectors")(type "KiCad")(uri "${KIPRJMOD}/libraries/Wire_Connectors.pretty")(options "")(descr ""))
 )
