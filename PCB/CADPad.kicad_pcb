@@ -2968,6 +2968,107 @@
 			)
 		)
 	)
+	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+		(layer "F.Cu")
+		(uuid "55099148-5671-4eb3-ac18-f4aade583479")
+		(at 172.61625 68.84)
+		(descr "Mounting Hole 3.2mm, M3, DIN965")
+		(tags "mounting hole 3.2mm m3 din965")
+		(property "Reference" "REF**"
+			(at 0 -3.8 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3b20980d-2725-4837-81c9-6a726762df98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 0 3.8 0)
+			(layer "F.Fab")
+			(uuid "74f808eb-fb98-4992-9fab-15ad953f8e2a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0369124b-8b70-44fe-a1de-0067b83eff33")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8428c00-b19b-414e-8cb7-68ade857a480")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 2.8 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(net 7798903)
+			(uuid "01307434-0c1d-44d9-a125-19b78dff15b3")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.05 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(net 7798903)
+			(uuid "e6c6fbbd-881a-4d9e-a21d-a2fcb8a433f1")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "479e7b78-87c1-4cc9-896b-fc5f613f1e08")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 5.6 5.6)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "aea5795e-8f11-4d44-a8b8-8d883cabf822")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 		(locked yes)
 		(layer "F.Cu")
@@ -3535,6 +3636,105 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+		(layer "F.Cu")
+		(uuid "65ed598b-5f8d-497f-902a-9d77b3767426")
+		(at 114.96625 131.34)
+		(descr "Mounting Hole 3.2mm, M3, DIN965")
+		(tags "mounting hole 3.2mm m3 din965")
+		(property "Reference" "REF**"
+			(at 0 -3.8 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d03d8cc0-6710-41e6-bcb4-00b118600f61")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 0 3.8 0)
+			(layer "F.Fab")
+			(uuid "01188748-0760-4dbd-aefb-5a9bc1121814")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07af4f16-f530-4a01-8dfe-5ff68a965ae7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef92df72-8b16-4adf-9bf7-07a6029ced85")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 2.8 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "a91f88e9-a964-46e1-a4ee-4b48f59bbd42")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.05 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "5c8087f2-365b-441c-ae55-94feb612e310")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "6827d854-b931-4848-8455-09ded6ed84b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 5.6 5.6)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "3f266739-fba1-480c-8026-37b9a1eb62a4")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 		(locked yes)
@@ -4390,6 +4590,105 @@
 			)
 		)
 	)
+	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+		(layer "F.Cu")
+		(uuid "7f5df3a3-6edd-4735-9849-8c396812b088")
+		(at 114.96625 68.84)
+		(descr "Mounting Hole 3.2mm, M3, DIN965")
+		(tags "mounting hole 3.2mm m3 din965")
+		(property "Reference" "REF**"
+			(at 0 -3.8 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7a5c7679-57bc-4644-8f9c-17a77483b39f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 0 3.8 0)
+			(layer "F.Fab")
+			(uuid "699fca33-50c5-4d6b-bcf2-1463fdd4c4c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76aabf06-058e-4f80-af4c-3a76a827dd3f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c4547597-234f-4d25-90fd-6a8bcd336e55")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 2.8 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "74a732b2-b32e-4769-8d06-dd74dce271a4")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.05 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "cc6b3f9b-119b-4021-ba7b-42d2bbc27e44")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "022605c6-3256-4cad-a65e-4654f64014b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 5.6 5.6)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "29e4cd08-245f-40ad-bed0-55e470dc6aed")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 		(layer "F.Cu")
 		(uuid "895e99b7-d14f-4739-9e0a-6294748ddf79")
@@ -5243,6 +5542,105 @@
 				(xyz -90 -0 -180)
 			)
 		)
+	)
+	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+		(layer "F.Cu")
+		(uuid "d9071352-2392-4dda-a089-3b70c069752b")
+		(at 172.61625 131.34)
+		(descr "Mounting Hole 3.2mm, M3, DIN965")
+		(tags "mounting hole 3.2mm m3 din965")
+		(property "Reference" "REF**"
+			(at 0 -3.8 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "764d73e2-e99a-410d-9a82-00fde3307f4d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 0 3.8 0)
+			(layer "F.Fab")
+			(uuid "756cad64-326c-40a2-9c4e-4f1b7f4e1e68")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d5f0feb-bd46-47e4-b118-6417dbff1502")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "698beac5-567b-4130-8c67-485e14a86304")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 2.8 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "77dd4722-fefa-4ea0-8018-4d45df0252cf")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.05 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "d234dc58-f9a9-4ecc-be1b-eee7e806ed17")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "c92cdede-7730-41c3-af55-f0f12fb03a1f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 5.6 5.6)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "a64bb8ed-2c67-4424-8776-296c933c1533")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 		(layer "F.Cu")
@@ -6593,13 +6991,13 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 		(layer "B.Cu")
 		(uuid "28cd9f34-4004-4557-bda4-d065732f9092")
-		(at 115.19125 81.9 90)
+		(at 116.71625 81.9 90)
 		(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D1"
 			(at 3.81 2.12 90)
 			(layer "B.SilkS")
-			(uuid "27aa82c9-17e8-45ff-9606-b3e299f6cbc6")
+			(uuid "2a468db0-901b-48da-b2ab-1b4b22e05f43")
 			(effects
 				(font
 					(size 1 1)
@@ -6611,7 +7009,7 @@
 		(property "Value" "1N4148"
 			(at 3.81 -2.12 90)
 			(layer "B.Fab")
-			(uuid "cc13d592-366c-422c-8588-06216e287f05")
+			(uuid "aa4efe00-22aa-4a31-acf7-70dcf7d2c823")
 			(effects
 				(font
 					(size 1 1)
@@ -6625,7 +7023,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "1a5f2a28-6a48-4aff-b77a-8b543c5e0c31")
+			(uuid "a45d7a26-6b35-47b6-b808-da645eacdd70")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6639,7 +7037,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "6b850881-ab72-4106-a743-f2d76a77ef34")
+			(uuid "aad97d5d-d12e-4930-a4e6-0e54564eb58e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9087,7 +9485,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 		(layer "B.Cu")
 		(uuid "89a67005-324e-4432-b200-ec6eec142ddb")
-		(at 115.21625 120 90)
+		(at 116.74125 120 90)
 		(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D7"
@@ -10233,7 +10631,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 		(layer "B.Cu")
 		(uuid "b32b1ca6-4fd7-40cb-a0a8-23a4bd0890cb")
-		(at 115.21625 101.075 90)
+		(at 116.74125 101.075 90)
 		(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D4"
@@ -10613,8 +11011,8 @@
 		)
 	)
 	(gr_rect
-		(start 112.680937 65.09)
-		(end 174.24125 135.09)
+		(start 111.21625 65.09)
+		(end 176.36625 135.09)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -10622,6 +11020,19 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "8dc80958-0724-44d7-a4e2-821e7e945774")
+	)
+	(gr_text "XIAO HERE"
+		(at 149.74125 70.29 0)
+		(layer "B.SilkS")
+		(uuid "236ce4ec-9200-44af-8c90-baf5f04329cc")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(segment
 		(start 142.34125 81.69)
@@ -10680,20 +11091,20 @@
 		(uuid "56651011-d3fb-42f5-805a-910440bc5a8b")
 	)
 	(segment
-		(start 126.15125 81.9)
-		(end 130.43125 86.18)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "1de90b8a-1d13-49e7-82f7-b6ad296cd634")
-	)
-	(segment
 		(start 151.41125 75.21)
 		(end 148.22125 75.21)
 		(width 0.3)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "2a60f8b9-a8c0-4e8a-9ade-2add7a3da832")
+	)
+	(segment
+		(start 116.71625 81.9)
+		(end 126.15125 81.9)
+		(width 0.3)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "4788b726-c66a-4d74-b8f9-a6cb17aab9a8")
 	)
 	(segment
 		(start 148.22125 75.21)
@@ -10712,20 +11123,12 @@
 		(uuid "81164a95-77b8-4562-876b-06a2d9d9ebd2")
 	)
 	(segment
-		(start 130.43125 86.18)
-		(end 130.43125 87.59)
+		(start 126.15125 81.9)
+		(end 130.43125 86.18)
 		(width 0.3)
 		(layer "B.Cu")
 		(net 1)
-		(uuid "a5fc1adc-476f-4431-a308-e3c922d99cdb")
-	)
-	(segment
-		(start 115.19125 81.9)
-		(end 126.15125 81.9)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "ad67eec6-cec0-49ee-ab75-1d0b13a84061")
+		(uuid "819be7f6-50b9-4717-9a3d-c3ddcc34506e")
 	)
 	(segment
 		(start 144.54125 81.69)
@@ -10736,6 +11139,14 @@
 		(uuid "bc32af83-2173-42f2-9d64-19b99d339a47")
 	)
 	(segment
+		(start 130.43125 86.18)
+		(end 130.43125 87.59)
+		(width 0.3)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "cd10e7a4-c2a6-4d0f-a983-a4e59a82faac")
+	)
+	(segment
 		(start 146.94125 79.29)
 		(end 144.54125 81.69)
 		(width 0.3)
@@ -10744,12 +11155,12 @@
 		(uuid "e8ce0740-363d-416d-9499-aee9f9f51301")
 	)
 	(segment
-		(start 115.19125 74.28)
-		(end 119.66125 74.28)
+		(start 119.66125 74.28)
+		(end 116.71625 74.28)
 		(width 0.3)
 		(layer "F.Cu")
 		(net 2)
-		(uuid "6e1dc3d1-4480-40d6-aa96-c241bf67f6e7")
+		(uuid "8963d742-10f4-4492-900e-e9b892ecfcd2")
 	)
 	(segment
 		(start 119.66125 74.28)
@@ -10904,6 +11315,14 @@
 		(uuid "057e3a7b-3582-4f41-8827-ba9ffc2cbc8d")
 	)
 	(segment
+		(start 116.74125 101.075)
+		(end 125.12625 101.075)
+		(width 0.3)
+		(layer "B.Cu")
+		(net 5)
+		(uuid "15ec0ed6-b945-48c0-b469-e5e6edfbfe87")
+	)
+	(segment
 		(start 137.14125 86.18112)
 		(end 137.14125 84.09)
 		(width 0.3)
@@ -10928,14 +11347,6 @@
 		(uuid "4955802c-0b20-42f7-80d8-53c3aabc7906")
 	)
 	(segment
-		(start 125.12625 101.075)
-		(end 127.14125 103.09)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 5)
-		(uuid "4ace8580-0662-4537-adaf-b9d9ea39178b")
-	)
-	(segment
 		(start 145.94125 102.49)
 		(end 139.74125 102.49)
 		(width 0.3)
@@ -10950,14 +11361,6 @@
 		(layer "B.Cu")
 		(net 5)
 		(uuid "8b1b2265-719d-4f4e-b514-f4dd53adaee2")
-	)
-	(segment
-		(start 115.21625 101.075)
-		(end 125.12625 101.075)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 5)
-		(uuid "91d8aa84-6ade-45fa-a832-c595dd969e25")
 	)
 	(segment
 		(start 139.74125 102.49)
@@ -10976,6 +11379,14 @@
 		(uuid "c79bff76-4fb7-490d-bbab-a33f93b4eb21")
 	)
 	(segment
+		(start 125.12625 101.075)
+		(end 127.14125 103.09)
+		(width 0.3)
+		(layer "B.Cu")
+		(net 5)
+		(uuid "cd1c4ab6-14b4-445d-9843-f07ce20189fa")
+	)
+	(segment
 		(start 137.74125 83.49)
 		(end 137.74125 79.32)
 		(width 0.3)
@@ -10992,20 +11403,20 @@
 		(uuid "ec2f77b6-01eb-488b-9bd4-c089291f68b9")
 	)
 	(segment
-		(start 115.21625 93.455)
-		(end 119.78625 93.455)
-		(width 0.3)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "55a15a34-c341-42b9-8a1a-ac766f086bf5")
-	)
-	(segment
 		(start 119.78625 93.455)
 		(end 120.93125 94.6)
 		(width 0.3)
 		(layer "F.Cu")
 		(net 6)
-		(uuid "69b1d251-c2e1-46ab-894d-61f69705d7c3")
+		(uuid "46fcf7be-757d-4914-9ebf-05f5d2d4b73b")
+	)
+	(segment
+		(start 116.74125 93.455)
+		(end 119.78625 93.455)
+		(width 0.3)
+		(layer "F.Cu")
+		(net 6)
+		(uuid "e4445fa0-b469-45c8-bbdc-60fdf986c72d")
 	)
 	(segment
 		(start 137.54125 90.165)
@@ -11064,20 +11475,20 @@
 		(uuid "c3ce1fa3-a8aa-454e-abdb-11502552d001")
 	)
 	(segment
+		(start 116.74125 112.38)
+		(end 119.66125 112.38)
+		(width 0.3)
+		(layer "F.Cu")
+		(net 9)
+		(uuid "1a77ec42-41fb-4f3f-81b7-7dd4f3d8757d")
+	)
+	(segment
 		(start 119.66125 112.38)
 		(end 120.93125 113.65)
 		(width 0.3)
 		(layer "F.Cu")
 		(net 9)
-		(uuid "5cf246a3-823e-43f6-9eb4-5b0b1fbf7c89")
-	)
-	(segment
-		(start 115.21625 112.38)
-		(end 119.66125 112.38)
-		(width 0.3)
-		(layer "F.Cu")
-		(net 9)
-		(uuid "d950c43c-9611-47a0-b032-bf4418489758")
+		(uuid "51437a79-efd3-43e7-9784-1425b547c669")
 	)
 	(segment
 		(start 131.94125 87.09)
@@ -11104,14 +11515,6 @@
 		(uuid "5573399c-b700-4743-b80e-95622c03e622")
 	)
 	(segment
-		(start 134.26625 120)
-		(end 115.21625 120)
-		(width 0.3)
-		(layer "F.Cu")
-		(net 10)
-		(uuid "592c549a-194d-4aa5-ab7f-b07a7b5dd5cb")
-	)
-	(segment
 		(start 131.94125 98.69)
 		(end 130.94125 99.69)
 		(width 0.3)
@@ -11126,6 +11529,14 @@
 		(layer "F.Cu")
 		(net 10)
 		(uuid "9d6ca232-0886-4c91-9d07-ac1f1db8f10d")
+	)
+	(segment
+		(start 134.26625 120)
+		(end 116.74125 120)
+		(width 0.3)
+		(layer "F.Cu")
+		(net 10)
+		(uuid "d61e3d2f-918e-4080-be1c-6454688ac1a6")
 	)
 	(segment
 		(start 134.26625 120)
