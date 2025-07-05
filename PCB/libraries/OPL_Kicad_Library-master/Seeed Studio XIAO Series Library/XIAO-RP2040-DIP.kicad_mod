@@ -480,7 +480,7 @@
 		(uuid "6b725fd4-d6f0-46bf-b3e0-7ec07cc05622")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/libraries/3D Assets/Seeed Studio XIAO RP2040 v26.step"
+	(model "${KIPRJMOD}/../CAD/3D Assets/Seeed Studio XIAO RP2040 v26.step"
 		(offset
 			(xyz 0 0 0)
 		)
