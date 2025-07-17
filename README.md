@@ -4,7 +4,7 @@ So this is a really interesting looking macropad that I will primarily be using 
 The most distinctive feature is that the OLED and rotary encoder are mounted on the front at an angle
 and will be attached to the PCB by soldering wires from the PCB to the components.
 
-**Note:** I took heavy inspiration from Sam Liu's [SquarePad](https://github.com/samdev-7/squarepad/tree/main).
+**Note:** I took heavy inspiration from Sam Liu's [Square Pad](https://github.com/samdev-7/squarepad/tree/main).
 
 <img src="images/full_macropad.png" width="800px"/>
 
