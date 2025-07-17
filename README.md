@@ -4,7 +4,7 @@ So this is a really interesting looking macropad that I will primarily be using 
 The most distinctive feature is that the OLED and rotary encoder are mounted on the front at an angle
 and will be attached to the PCB by soldering wires from the PCB to the components.
 
-**Note:** I took heavy inspiration from Sam Liu's [SquarePad](https://github.com/samdev-7/squarepad/tree/main)
+**Note:** I took heavy inspiration from Sam Liu's [SquarePad](https://github.com/samdev-7/squarepad/tree/main).
 
 <img src="images/full_macropad.png" width="800px"/>
 
@@ -35,17 +35,17 @@ snap fit 3D print before and I thought that now is **not** the time to mess with
 
 <br><img src="images/back_of_slots.png" width="800px"/><br>
 
-Also, I will probably be bending 3 main pins of the EC11 with pliers so they fit better in the case
+Also, I will probably be bending 3 main pins of the EC11 with pliers so they fit better in the case.
 
 ## PCB
 Unfortunately I can't make a clean pcb for my life and I couldn't figure out how to connect everything without
-excessively spamming vias and then via stitching the ground planes together on top of that
+excessively spamming vias and then via stitching the ground planes together on top of that.
 
 <br><img src="images/schematic.png" width="791px"/><br>
 
 <br><img src="images/pcb_3d_front.png" height="400px"/> <img src="images/pcb_3d_back.png" height="400px"/><br>
 
-*The XIAO RP2040 will be soldered to the back with header pins on* 
+*The XIAO RP2040 will be soldered to the back with header pins on.*
 
 <br><img src="images/pcb_2d_front.png" height="400px"/> <img src="images/pcb_2d_back.png" height="400px"/><br>
 
