@@ -14,7 +14,7 @@
 				)
 			)
 		)
-		(property "Value" "SSD1306_0.61_OLED"
+		(property "Value" "SSD1306_0.91_OLED"
 			(at 8.128 1.524 0)
 			(effects
 				(font
@@ -49,20 +49,18 @@
 				(hide yes)
 			)
 		)
-		(symbol "SSD1306-0.91-OLED_0_1"
+		(symbol "SSD1306-0.91-OLED_1_1"
 			(rectangle
 				(start 0 0)
 				(end 16.51 -7.62)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
-		)
-		(symbol "SSD1306-0.91-OLED_1_1"
 			(pin passive line
 				(at 2.54 -10.16 90)
 				(length 2.54)
