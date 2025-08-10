@@ -1,52 +1,71 @@
 '''
 TODO: explain that this allows u to swap between diff keybinds for diff onshape modes
 '''
-import board
-import busio
+import board # type: ignore
+import busio # type: ignore
 
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.keys import KC
 from kmk.scanners import DiodeOrientation
 from kmk.modules.encoder import EncoderHandler
 from kmk.modules.macros import Macros
-from kmk.extensions.rgb import RGB, AnimationModes # remember to install NeoPixel library
 from kmk.extensions.display import Display, TextEntry, ImageEntry # remember to install adafruit_display_text
 from kmk.extensions.display.ssd1306 import SSD1306 # remember to install adafruit_displayio_ssd1306
 
 from pad_profiles import Profile, ProfileSwitcher
 
 # idk abt the specific keybinds ill figure them out later
+# idk why i chose microsoft colors but they're good placeholder ig
+SPOTIFY_PROFILE = Profile(
+    [[
+        KC.MEDIA_PREV_SONG, KC.MEDIA_PLAY_PAUSE, KC.MEDIA_NXT_SONG,
+        KC.MEDIA_VOL_DOWN, KC.MEDIA_MUTE, KC.MEDIA_VOL_UP,
+        KC.MEDIA_BCK, KC.NO, KC.MEDIA_FWD
+    ]],
+    [
+        TextEntry("Samvididdy", 64, 16, x_anchor="M", y_anchor="B"),
+        TextEntry("ik where u live", 64, 16, x_anchor="M", y_anchor="T")
+    ]
+)
 PS_PROFILE = Profile(
-    [[KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO]],
-    (30, 247, 50),
-    AnimationModes.BREATHING,
-    []
+    [[
+        KC.N1, KC.N1, KC.N1,
+        KC.N1, KC.N1, KC.N1,
+        KC.N1, KC.N1, KC.N1
+    ]],
+    [
+        TextEntry("part studio be like", 64, 16, x_anchor="M", y_anchor="M"),
+    ]
 )
 SKETCH_PROFILE = Profile(
-    [[KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO]],
-    (56, 247, 50),
-    AnimationModes.BREATHING,
-    []
+    [[
+        KC.N2, KC.N2, KC.N2,
+        KC.N2, KC.N2, KC.N2,
+        KC.N2, KC.N2, KC.N2
+    ]],
+    [
+        TextEntry("sketch be like", 64, 16, x_anchor="M", y_anchor="M")
+    ]
 )
 CONSTRAINT_PROFILE = Profile(
-    [[KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO]],
-    (141, 250, 50),
-    AnimationModes.BREATHING,
-    []
+    [[
+        KC.N3, KC.N3, KC.N3,
+        KC.N3, KC.N3, KC.N3,
+        KC.N3, KC.N3, KC.N3
+    ]],
+    [
+        TextEntry("constraint be like", 64, 16, x_anchor="M", y_anchor="M")
+    ]
 )
 ASM_PROFILE = Profile(
-    [[KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO]],
-    (9, 217, 50),
-    AnimationModes.BREATHING,
-    []
+    [[
+        KC.N4, KC.N4, KC.N4,
+        KC.N4, KC.N4, KC.N4,
+        KC.N4, KC.N4, KC.N4
+    ]],
+    [
+        TextEntry("assembly be like", 64, 16, x_anchor="M", y_anchor="M")
+    ]
 )
 STEP_SIZE = 2
 
@@ -54,24 +73,17 @@ STEP_SIZE = 2
 profile_switcher = ProfileSwitcher([PS_PROFILE, SKETCH_PROFILE, CONSTRAINT_PROFILE, ASM_PROFILE], STEP_SIZE)
 
 keyboard = KMKKeyboard()
+encoder_handler = EncoderHandler()
+i2c_bus = busio.I2C(board.D5, board.D4)
+display_driver = SSD1306(i2c=i2c_bus)
+display = Display(display=display_driver, width=128, height=32)
+
 keyboard.col_pins = (board.D10, board.D2, board.D1)
 keyboard.row_pins = (board.D3, board.D9, board.D8)
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
+encoder_handler.pins = ((board.D6, board.D7, None))
 
-encoder_handler = EncoderHandler()
-keyboard.modules.append(encoder_handler)
-encoder_handler.pins = (board.D6, board.D7, None)
-
-keyboard.modules.append(Macros())
-
-rgb = RGB(pixel_pin=board.D0, num_pixels=12, val_default=50, val_limit=50, rgb_order=(1,0,2))
-rgb.animation_mode = AnimationModes.BREATHING_RAINBOW
-keyboard.extensions.append(rgb)
-
-i2c_bus = busio.I2C(board.GP_SCL, board.GP_SDA)
-display_driver = SSD1306(i2c=i2c_bus)
-display = Display(display=display_driver, width=128, height=32)
-display.entries = [TextEntry(text="Hello There", x=64, y=16, x_anchor="M", y_anchor="M")]
+keyboard.modules.extend([encoder_handler, Macros()])
 keyboard.extensions.append(display)
 
 
@@ -81,8 +93,6 @@ def switch_left_profile():
     if switch_profile:
         profile = profile_switcher.curr_profile
         keyboard.keymap = profile.keymap
-        rgb.set_hsv_fill(*profile.color)
-        rgb.animation_mode = profile.anim_mode
         display.entries = profile.scrn_elements
 
 
@@ -92,12 +102,11 @@ def switch_right_profile():
     if switch_profile:
         profile = profile_switcher.curr_profile
         keyboard.keymap = profile.keymap
-        rgb.set_hsv_fill(*profile.color)
-        rgb.animation_mode = profile.anim_mode
         display.entries = profile.scrn_elements
 
-
-keyboard.keymap = profile_switcher.curr_profile.keymap
+init_profile = profile_switcher.curr_profile
+keyboard.keymap = init_profile.keymap
+display.entries = init_profile.scrn_elements
 
 ENC_LEFT = KC.MACRO(switch_left_profile)
 ENC_RIGHT = KC.MACRO(switch_right_profile)

@@ -5,10 +5,8 @@ class Profile:
     '''
     TODO: make docstring
     '''
-    def __init__(self, keymap:list, color:tuple, anim_mode, scrn_elements:list):
+    def __init__(self, keymap:list, scrn_elements:list):
         self.keymap = keymap
-        self.color = color
-        self.anim_mode = anim_mode
         self.scrn_elements = scrn_elements
         
 class ProfileSwitcher:
@@ -27,7 +25,7 @@ class ProfileSwitcher:
         self.pos = (self.pos - 1) % (len(self.profiles) * self.step_size)
         return self.pos % self.step_size == 0
 
-    def step_right(self):
+    def step_right(self) -> bool:
         self.pos = (self.pos + 1) % (len(self.profiles) * self.step_size)
         return self.pos % self.step_size == 0
 

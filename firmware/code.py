@@ -16,29 +16,56 @@ from pad_profiles import Profile, ProfileSwitcher
 
 # idk abt the specific keybinds ill figure them out later
 # idk why i chose microsoft colors but they're good placeholder ig
+SPOTIFY_PROFILE = Profile(
+    [[
+        KC.MEDIA_PREV_SONG, KC.MEDIA_PLAY_PAUSE, KC.MEDIA_NXT_SONG,
+        KC.MEDIA_VOL_DOWN, KC.MEDIA_MUTE, KC.MEDIA_VOL_UP,
+        KC.MEDIA_BCK, KC.NO, KC.MEDIA_FWD
+    ]],
+    [
+        TextEntry("Samvididdy", 64, 16, x_anchor="M", y_anchor="B"),
+        TextEntry("ik where u live", 64, 16, x_anchor="M", y_anchor="T")
+    ]
+)
 PS_PROFILE = Profile(
-    [[KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO]],
-    [TextEntry("part studio be like", 64, 16, x_anchor="M", y_anchor="M")]
+    [[
+        KC.N1, KC.N1, KC.N1,
+        KC.N1, KC.N1, KC.N1,
+        KC.N1, KC.N1, KC.N1
+    ]],
+    [
+        TextEntry("part studio be like", 64, 16, x_anchor="M", y_anchor="M"),
+    ]
 )
 SKETCH_PROFILE = Profile(
-    [[KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO]],
-    [TextEntry("sketch be like", 64, 16, x_anchor="M", y_anchor="M")]
+    [[
+        KC.N2, KC.N2, KC.N2,
+        KC.N2, KC.N2, KC.N2,
+        KC.N2, KC.N2, KC.N2
+    ]],
+    [
+        TextEntry("sketch be like", 64, 16, x_anchor="M", y_anchor="M")
+    ]
 )
 CONSTRAINT_PROFILE = Profile(
-    [[KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO]],
-    [TextEntry("constraint be like", 64, 16, x_anchor="M", y_anchor="M")]
+    [[
+        KC.N3, KC.N3, KC.N3,
+        KC.N3, KC.N3, KC.N3,
+        KC.N3, KC.N3, KC.N3
+    ]],
+    [
+        TextEntry("constraint be like", 64, 16, x_anchor="M", y_anchor="M")
+    ]
 )
 ASM_PROFILE = Profile(
-    [[KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO],
-     [KC.NO, KC.NO, KC.NO]],
-    [TextEntry("assembly be like", 64, 16, x_anchor="M", y_anchor="M")]
+    [[
+        KC.N4, KC.N4, KC.N4,
+        KC.N4, KC.N4, KC.N4,
+        KC.N4, KC.N4, KC.N4
+    ]],
+    [
+        TextEntry("assembly be like", 64, 16, x_anchor="M", y_anchor="M")
+    ]
 )
 STEP_SIZE = 2
 
@@ -47,14 +74,14 @@ profile_switcher = ProfileSwitcher([PS_PROFILE, SKETCH_PROFILE, CONSTRAINT_PROFI
 
 keyboard = KMKKeyboard()
 encoder_handler = EncoderHandler()
-i2c_bus = busio.I2C(board.GP_SCL, board.GP_SDA)
+i2c_bus = busio.I2C(board.D5, board.D4)
 display_driver = SSD1306(i2c=i2c_bus)
 display = Display(display=display_driver, width=128, height=32)
 
 keyboard.col_pins = (board.D10, board.D2, board.D1)
 keyboard.row_pins = (board.D3, board.D9, board.D8)
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
-encoder_handler.pins = (board.D6, board.D7, None)
+encoder_handler.pins = ((board.D6, board.D7, None))
 
 keyboard.modules.extend([encoder_handler, Macros()])
 keyboard.extensions.append(display)
