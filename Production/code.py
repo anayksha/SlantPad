@@ -35,13 +35,12 @@ keyboard.extensions.extend([display, MediaKeys()])
 # idk why i chose microsoft colors but they're good placeholder ig
 MEDIA_PROFILE = Profile(
     [[
-        KC.MPRV, KC.MPLY, KC.MNXT,
-        KC.VOLD, KC.MUTE, KC.VOLU,
-        KC.MRWD, KC.MSTP, KC.MFFD
+        KC.MPRV, KC.MSTP, KC.MNXT,
+        KC.MRWD, KC.MPLY, KC.MFFD,
+        KC.VOLD, KC.MUTE, KC.VOLU
     ]],
     [
-        TextEntry("UHHHH", 64, 16, x_anchor="M", y_anchor="B"),
-        TextEntry("NOTHING TO SEE HERE", 64, 16, x_anchor="M", y_anchor="T")
+        TextEntry("media controls be like", 64, 16, x_anchor="M", y_anchor="M")
     ]
 )
 PS_PROFILE = Profile(
