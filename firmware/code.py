@@ -40,8 +40,8 @@ MEDIA_PROFILE = Profile(
         KC.MRWD, KC.MSTP, KC.MFFD
     ]],
     [
-        TextEntry("Samvididdy", 64, 16, x_anchor="M", y_anchor="B"),
-        TextEntry("ik where u live", 64, 16, x_anchor="M", y_anchor="T")
+        TextEntry("UHHHH", 64, 16, x_anchor="M", y_anchor="B"),
+        TextEntry("NOTHING TO SEE HERE", 64, 16, x_anchor="M", y_anchor="T")
     ]
 )
 PS_PROFILE = Profile(
