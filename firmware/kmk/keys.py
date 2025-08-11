@@ -316,28 +316,6 @@ def maybe_make_firmware_key(candidate: str) -> Optional[Key]:
     for names, handler in keys:
         if candidate in names:
             return make_key(names=names, on_press=handler)
-        
-def mabye_make_media_key(candidate: str) -> Optional[Key]:
-    '''
-    NOTE: this was custom added
-    '''
-    codes = (
-        (0x7f, ('MUTE')),
-        (0x80, ('VOLUME_UP', 'VOL_UP')),
-        (0x81, ('VOLUME_DOWN', 'VOL_DOWN')),
-        (0xe8, ('MEDIA_PLAY_PAUSE', 'MEDIA_PLAY', 'MEDIA_PAUSE')),
-        (0xea, ('MEDIA_PREVIOUS_SONG', 'MEDIA_PREV_SONG', 'MEDIA_PREVIOUS', 'MEDIA_PREV')),
-        (0xeb, ('MEDIA_NEXT_SONG', 'MEDIA_NXT_SONG', 'MEDIA_NEXT', 'MEDIA_NXT')),
-        (0xed, ('MEDIA_VOLUME_UP', 'MEDIA_VOL_UP')),
-        (0xee, ('MEDIA_VOLUME_DOWN', 'MEDIA_VOL_DOWN')),
-        (0xef, ('MEDIA_MUTE')),
-        (0xf1, ('MEDIA_BACK', "MEDIA_BCK")),
-        (0xf2, ('MEDIA_FORWARD', 'MEDIA_FWD')),
-    )
-
-    for code, names in codes:
-        if candidate in names:
-            return make_key(names=names, constructor=KeyboardKey, code=code)
 
 
 KEY_GENERATORS = (
@@ -372,7 +350,6 @@ KEY_GENERATORS = (
     # sending Shift+(whatever key is normally pressed) to get these, so
     # for example `KC_AT` will hold shift and press 2.
     maybe_make_shifted_key,
-    mabye_make_media_key,
 )
 
 

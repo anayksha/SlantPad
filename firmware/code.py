@@ -11,16 +11,33 @@ from kmk.modules.encoder import EncoderHandler
 from kmk.modules.macros import Macros
 from kmk.extensions.display import Display, TextEntry, ImageEntry # remember to install adafruit_display_text
 from kmk.extensions.display.ssd1306 import SSD1306 # remember to install adafruit_displayio_ssd1306
+from kmk.extensions.media_keys import MediaKeys
 
 from pad_profiles import Profile, ProfileSwitcher
 
+
+keyboard = KMKKeyboard()
+encoder_handler = EncoderHandler()
+i2c_bus = busio.I2C(board.D5, board.D4)
+display_driver = SSD1306(i2c=i2c_bus)
+display = Display(display=display_driver, width=128, height=32)
+
+keyboard.col_pins = (board.D10, board.D2, board.D1)
+keyboard.row_pins = (board.D3, board.D9, board.D8)
+keyboard.diode_orientation = DiodeOrientation.COL2ROW
+encoder_handler.pins = ((board.D6, board.D7, None))
+
+keyboard.modules.extend([encoder_handler, Macros()])
+keyboard.extensions.extend([display, MediaKeys()])
+
+
 # idk abt the specific keybinds ill figure them out later
 # idk why i chose microsoft colors but they're good placeholder ig
-SPOTIFY_PROFILE = Profile(
+MEDIA_PROFILE = Profile(
     [[
-        KC.MEDIA_PREV_SONG, KC.MEDIA_PLAY_PAUSE, KC.MEDIA_NXT_SONG,
-        KC.MEDIA_VOL_DOWN, KC.MEDIA_MUTE, KC.MEDIA_VOL_UP,
-        KC.MEDIA_BCK, KC.NO, KC.MEDIA_FWD
+        KC.MPRV, KC.MPLY, KC.MNXT,
+        KC.VOLD, KC.MUTE, KC.VOLU,
+        KC.MRWD, KC.MSTP, KC.MFFD
     ]],
     [
         TextEntry("Samvididdy", 64, 16, x_anchor="M", y_anchor="B"),
@@ -69,22 +86,7 @@ ASM_PROFILE = Profile(
 )
 STEP_SIZE = 2
 
-
-profile_switcher = ProfileSwitcher([PS_PROFILE, SKETCH_PROFILE, CONSTRAINT_PROFILE, ASM_PROFILE], STEP_SIZE)
-
-keyboard = KMKKeyboard()
-encoder_handler = EncoderHandler()
-i2c_bus = busio.I2C(board.D5, board.D4)
-display_driver = SSD1306(i2c=i2c_bus)
-display = Display(display=display_driver, width=128, height=32)
-
-keyboard.col_pins = (board.D10, board.D2, board.D1)
-keyboard.row_pins = (board.D3, board.D9, board.D8)
-keyboard.diode_orientation = DiodeOrientation.COL2ROW
-encoder_handler.pins = ((board.D6, board.D7, None))
-
-keyboard.modules.extend([encoder_handler, Macros()])
-keyboard.extensions.append(display)
+profile_switcher = ProfileSwitcher([MEDIA_PROFILE, PS_PROFILE, SKETCH_PROFILE, CONSTRAINT_PROFILE, ASM_PROFILE], STEP_SIZE)
 
 
 def switch_left_profile():
